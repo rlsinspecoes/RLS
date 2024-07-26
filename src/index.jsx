@@ -1,13 +1,12 @@
-
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import App from "./App";
-
-
 
 const divDoIndex = document.getElementById("root");
 const root = createRoot(divDoIndex);
 
 root.render(
-    <BrowserRouter><App /></BrowserRouter>
+    <HashRouter>
+        <App />
+    </HashRouter>
 );
