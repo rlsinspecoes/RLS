@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+.portContent {
+    background-image: url('../images/portifolio_fundo.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 4%;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portContent h2 {
+    text-shadow: -2.5px 3px 3px #000000d3;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: #0c3944;
+    font-size: 40px;
+}
+
+.portContent p {
+    text-align: center;
+    line-height: 25px;
+    max-width: 75rem;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.meio {
+    padding: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 90px;
+}
+
+.meio .image img {
+    width: 750px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 45px;
+    box-shadow: -16px 15px 15px rgba(0, 0, 0, 0.626);
+}
+
+.portfolio ul {
+    margin-top: 10px;
+    text-transform: capitalize;
+    flex-direction: column;
+    padding: 15px;
+    font-size: x-large;
+    max-width: 60rem;
+}
+
+.portfolio li {
+    font-family: 'Lilita One', sans-serif;
+    padding: 6px;
+}
+
+.portfolio li:hover {
+    transform: scale(1.03);
+    transition: 0.9s;
+    color: #003642;
+}
+
+@media screen and (max-width: 1400px){
+    .portContent {
+        min-height: 90vh;
+    }
+    .meio ul {
+        max-width: 36rem;
+        font-size: 18px;
+    }
+    .meio .image img {
+        width: 600px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .meio {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .portContent h2 {
+        font-size: 30px;
+    }
+    .meio .image img{
+        width: 400px;
+        height: 300px;
+    }
+    .portfolio li {
+        padding: 4px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .portContent {
+        padding-top: 50px;
+    }
+    .meio .image img{
+        width: 340px;
+        height: 240px;
+    }
+}

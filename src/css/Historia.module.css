@@ -1,0 +1,110 @@
+/*PRIMEIRO BLOCO DO SOBRE*/
+.sobre .bloco{
+    z-index: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    min-height: 80vh;
+    display: flex;
+    background:rgb(126, 126, 126);
+    
+}
+
+.sobre .bloco .image{
+    flex:25rem;
+}
+
+.sobre .bloco .image img{
+    width: 98%;
+    border-radius: 115px 50px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.sobre .bloco .content{
+    flex: 1 1 45rem;
+    padding:2rem;
+}
+.sobre .bloco .content h3{
+    margin-bottom: 8px;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.sobre .bloco .content p{
+    font-size: 1.8rem;
+    color:#000000;
+    padding:1rem 0;
+    line-height: 1.4;
+    font-weight: 700;
+    max-width:80rem;
+}
+.sobre .bloco .content h2 {
+    padding-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #072123;
+    text-transform: uppercase;
+    text-shadow: -2px 1px 4px rgba(0, 0, 0, 0.606);
+    
+}
+
+/*SEGUNDO BLOCO DO SOBRE*/
+.sobre2 .bloco{
+    flex-direction: row-reverse;
+    z-index: 1;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    min-height: 70vh;
+    display: flex;
+    background:rgb(142, 142, 142);
+    align-items: center;
+    
+}
+
+.sobre2 .bloco .image{
+    display: flex;
+    justify-content: center;
+    flex:25rem;
+}
+.sobre2 .bloco .image img{
+    width: 74%;
+    border-radius: 50px 115px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.sobre2 .bloco .content{
+    flex: 1 1 45rem;
+    padding:2rem;
+}
+
+.sobre2 .bloco .content h2 {
+    padding-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #072123;
+    text-transform: uppercase;
+    text-shadow: -2px 1px 4px rgba(0, 0, 0, 0.606);
+}
+.sobre2 .bloco .content p{
+    font-size: 1.8rem;
+    color:#000000;
+    padding:1rem 0;
+    line-height: 1.4;
+    font-weight: 700;
+    max-width:80rem;
+}
+@media screen and (max-width: 1000px){
+    .sobre .bloco,.sobre2 .bloco{
+        flex-direction: column-reverse;
+    }
+    
+    .sobre2 .bloco .image{
+        justify-content: left;
+    }
+    .sobre2 .bloco .image img{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@100&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+    width: 100%;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(34, 34, 34);
+}
+
+/* cabeçalho */
+
+nav{
+    background-color: #000000;
+    padding: 20px 4%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo h1 {
+    margin: 0px 20px 0px 50px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 47px;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 0px 8px;
+}
+
+.lista-desktop{
+    padding-right: 200px;
+    font-size: large;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    list-style: none;
+}
+
+.lista-desktop a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.lista-desktop  li a{
+    font-weight: bold;
+    display: inline-block;
+    color: #ffffff;
+    padding-bottom: 3px;
+}
+
+.lista-desktop li a:hover{
+    color: #ffffff;
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+
+/*menu mobile*/
+.btn-abrir-menu {
+    display: none;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.menu-mobile{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.menu-mobile.abrir-menu{
+    width: 58%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+    cursor: pointer;
+}
+
+.menu-mobile .btn-fechar{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    font-weight: 600;
+    color: #fff;
+    font-size: 17px;
+    padding: 20px 4%;
+    display: block;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu-mobile nav ul li a:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.685);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888888;
+    display: none;
+}
+
+footer {
+    font-size: 2.1rem;
+    padding: 1rem;
+    background: #000000;
+    text-align: center;
+}
+
+footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    margin: .3rem;
+    border-radius: 50%;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+footer .share a:hover {
+    background-color: #ffffff;
+    color: #010103;
+}
+
+footer .credit {
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+@media screen and (max-width: 955px) {
+    .lista-desktop{
+        padding-right: 0px;
+    }
+
+    .logo h1{
+        margin-right: 0px;
+    }
+
+    .lista-desktop li a {
+        display: none;
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+
+    .btn-fechar{
+        cursor: pointer;
+    }
+
+    .logo h1 {
+        margin-left: 0px;
+        font-size: 43px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .menu-mobile nav ul {
+        text-align: right;
+    }
+
+    .menu-mobile nav ul li {
+        display: block;
+    }
+
+    .btn-abrir-menu {
+        font-size: 40px;
+    }
+
+}

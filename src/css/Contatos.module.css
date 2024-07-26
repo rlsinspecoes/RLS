@@ -1,0 +1,206 @@
+.principal {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloContato {
+    color: #fbfbfb;
+    font-weight: bold;
+    padding-top: 120px;
+    font-size: 40px;
+    text-shadow: -2px 1px 2px rgb(255, 255, 255);
+}
+
+.titulo {
+    color: #ffffff;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.hambiente { 
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hambiente ul {
+    padding-left: 8px;
+    font-size: 23px;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.linksContato li {
+    margin-top: 60px;
+    text-decoration: none;
+    color: #fffbfb;
+    border-right: 3px solid rgb(238, 238, 238);
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.linksContato .ultimo {
+    border-right: 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    border-bottom: 2px solid white;
+    gap: 25px;
+}
+
+.adress {
+    margin: 17px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.leftSide2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+.leftSide2 img {
+    border: 2px solid white;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 125px;
+    height: 126px;
+    margin-bottom: 20px;
+}
+
+.topic {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.texto {
+    padding-top: 8px; 
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.trabalheConosco {
+    margin-top: 65px;
+}
+
+.trabalheConosco h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    color: #fbfbfb;
+    font-weight: bold;
+}
+
+.bloco {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco p {
+    font-size: small;
+    font-weight: bold;
+    color: #fff;
+}
+
+.assunto {
+    padding: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2.5px solid rgb(255, 255, 255);
+}
+
+.mensagem {
+    padding-left: 5px;
+    padding-top: 6px;
+    padding-right: 48px;
+    padding-bottom: 100px;
+    color: #fffefe;
+    font-weight: bold;
+    border: 2.5px solid rgb(255, 255, 255);
+}
+
+.trabalheConosco a {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px 8px;
+}
+
+.trabalheConosco a:hover {
+    color: #ffffff;
+    background-color: #00232c;
+    border: 3px solid #00232c; 
+    transition: 0.7s;
+}
+
+@media screen and (max-width: 1400px) {
+    .home2 ul {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .hambiente ul,
+    .leftSide,
+    .leftSide2 {
+        flex-direction: column;
+    }
+    .linksContato li,
+    .leftSide {
+        border: none;
+    }
+    .tituloContato {
+        padding-top: 60px;
+    }
+    .hambiente ul {
+        margin-top: 50px;
+    }
+    .linksContato li {
+        margin-top: 20px;
+        text-align: center;
+    }
+}

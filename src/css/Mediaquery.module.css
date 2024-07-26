@@ -1,0 +1,48 @@
+/* mediaqueries.module.css */
+@media screen and (max-width: 1400px) {
+
+    
+    
+    
+}
+
+
+
+
+@media screen and (max-width: 955px) {
+    .menuDesktop ul li a {
+        display: none;
+    }
+    .btnAbrirMenu ion-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .btnFechar ion-icon {
+        cursor: pointer;
+    }
+    .logo h1 {
+        margin-left: 0px;
+        font-size: 43px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .btnAbrirMenu ion-icon {
+        display: block;
+    }
+    .menuDesktop ul {
+        display: none;
+    }
+    .menuMobile nav ul {
+        text-align: right;
+    }
+    .menuMobile nav ul li {
+        display: block;
+    }
+}
