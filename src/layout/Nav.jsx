@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { VscThreeBars } from "react-icons/vsc";
 import { IoClose } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 function Nav() {
   useEffect(() => {
@@ -31,17 +32,17 @@ function Nav() {
   return (
     <nav className="nav">
       <div className="logo">
-        <a href="index.html">
+        <Link to="/">
           <h1>RLS</h1>
-        </a>
+        </Link>
       </div>
       
       <ul className="lista-desktop">
-        <li><a href="/">HOME</a></li>
-        <li><a href="/serviços">SERVIÇOS</a></li>
-        <li><a href="/historia">HISTÓRIA</a></li>
-        <li><a href="/portfolio">PORTFÓLIO</a></li>
-        <li><a href="/contatos">CONTATOS</a></li>
+        <li><Link to="/">HOME</Link></li>
+        <li><Link to="/serviços">SERVIÇOS</Link></li>
+        <li><Link to="/historia">HISTÓRIA</Link></li>
+        <li><Link to="/portfolio">PORTFÓLIO</Link></li>
+        <li><Link to="/contatos">CONTATOS</Link></li>
       </ul>
       
       <div className="btn-abrir-menu" id="btn-menu">
