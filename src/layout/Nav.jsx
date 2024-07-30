@@ -55,12 +55,12 @@ function Nav() {
         </div>
 
         <nav>
-          <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/serviços">SERVIÇOS</a></li>
-            <li><a href="/historia">HISTÓRIA</a></li>
-            <li><a href="/portfolio">PORTFÓLIO</a></li>
-            <li><a href="/contatos">CONTATOS</a></li>
+          <ul className="lista-desktop">
+            <li><Link to="/">HOME</Link></li>
+            <li><Link to="/serviços">SERVIÇOS</Link></li>
+            <li><Link to="/historia">HISTÓRIA</Link></li>
+            <li><Link to="/portfolio">PORTFÓLIO</Link></li>
+            <li><Link to="/contatos">CONTATOS</Link></li>
           </ul>
         </nav>
       </div>
