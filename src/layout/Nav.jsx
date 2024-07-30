@@ -55,7 +55,7 @@ function Nav() {
         </div>
 
         <nav>
-          <ul className="lista-desktop">
+          <ul>
             <li><Link to="/">HOME</Link></li>
             <li><Link to="/serviços">SERVIÇOS</Link></li>
             <li><Link to="/historia">HISTÓRIA</Link></li>
