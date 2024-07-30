@@ -180,9 +180,7 @@ footer .credit {
 }
 
 @media screen and (max-width: 955px) {
-    .nav{
-        display: block;
-    }
+    
     .lista-desktop{
         padding-right: 0px;
     }
