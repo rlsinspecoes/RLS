@@ -1,20 +1,22 @@
 import React from 'react';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 import img3 from '../images/portfolio.jpg';
-import styles from '../css/Portfolio.module.css'; // Crie um módulo CSS específico para o Portfolio
+import styles from '../css/Portfolio.module.css';
 
 function Portfolio() {
+    useScrollAnimation();
     return (
         <div className={styles.principal}>
             <section className={styles.portfolio} id="portfolio">
                 <div className={styles.portContent}>
-                    <h2>NOSSO PORTIFÓLIO</h2>
-                    <p>Temos uma longa história de parcerias bem-sucedidas com diversas empresas e organizações de renome, o que reflete nosso compromisso com a excelência e a prestação de serviços de alta qualidade. Algumas das empresas com as quais tivemos o privilégio de colaborar incluem:</p>
+                    <h2 data-animate="top" >NOSSO PORTIFÓLIO</h2>
+                    <p data-animate="top">Temos uma longa história de parcerias bem-sucedidas com diversas empresas e organizações de renome, o que reflete nosso compromisso com a excelência e a prestação de serviços de alta qualidade. Algumas das empresas com as quais tivemos o privilégio de colaborar incluem:</p>
                     
-                    <div className={styles.meio}>
-                        <div className={styles.image}>
+                    <div  className={styles.meio}>
+                        <div data-animate="right" className={styles.image}>
                             <img src={img3} alt="Portfólio" />
                         </div>
-                        <ul>
+                        <ul data-animate="left">
                             <li>Construtora CPL</li>
                             <li>DAX Energy</li>
                             <li>Enel Brasil</li>

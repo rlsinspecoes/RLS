@@ -27,6 +27,32 @@ html::-webkit-scrollbar-thumb{
     background-color: rgb(34, 34, 34);
 }
 
+
+
+/* animação scroll */
+
+[data-animate="top"]{
+    opacity: 0;
+    transform: translate3d(0, -70px, 0);
+    transition: opacity 1s, transform 1s;
+}
+[data-animate="right"]{
+    opacity: 0;
+    transform: translate3d(-70px, 0, 0);
+    transition: opacity 1s, transform 1s;
+}
+[data-animate="left"]{
+    opacity: 0;
+    transform: translate3d(70px, 0, 0);
+    transition: opacity 1s, transform 1s;
+}
+
+
+[data-animate].anime{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
 /* cabeçalho */
 
 nav{

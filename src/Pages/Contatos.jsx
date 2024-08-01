@@ -1,4 +1,5 @@
 import React from 'react';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 import '../css/Mediaquery.module.css';
 import img_avatar from '../images/avatar2.1.jpg';
 import img_avatar2 from '../images/contato.jpg';
@@ -7,19 +8,20 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import styles from '../css/Contatos.module.css';
 
 function Contatos() {
+    useScrollAnimation();
     return (
         <div className={styles.principal}>
-            <section className={styles.hambiente}>
-                <div className={styles.contato}>
-                    <h1 className={styles.tituloContato}>CONTATOS</h1>
+            <section  className={styles.hambiente}>
+                <div  className={styles.contato}>
+                    <h1 data-animate="top" className={styles.tituloContato}>CONTATOS</h1>
                     
                     <div className={styles.contact}> 
                         <div className={styles.leftSide}>
-                            <div className={styles.adress}>
+                            <div data-animate="right" className={styles.adress}>
                                 <MdOutlineMailOutline size={28} color='white'/>
                                 <div className={styles.texto}>contato@rlsinspecoes.com.br</div>
                             </div>
-                            <div className={styles.adress}>
+                            <div data-animate="left" className={styles.adress}>
                                 <LuPhone size={28} color='white'/>          
                                 <div className={styles.texto}>+55 (41) 99991-1928</div>
                             </div>
@@ -27,8 +29,8 @@ function Contatos() {
                     </div>
 
                     <div className={styles.contact}>
-                        <div className={styles.leftSide2}>
-                            <div className={styles.adress}>
+                        <div  className={styles.leftSide2}>
+                            <div data-animate="right" className={styles.adress}>
                                 <img src={img_avatar} alt="" />
                                 <div className={styles.topic}>Direção </div>
                                 <div className={styles.texto}>
@@ -36,7 +38,7 @@ function Contatos() {
                                     <div>rogerio@rlsinspecoes.com.br</div>
                                 </div>
                             </div>
-                            <div className={styles.adress}>
+                            <div data-animate="left" className={styles.adress}>
                                 <img src={img_avatar2} alt="" />
                                 <div className={styles.topic}>Comercial </div>
                                 <div className={styles.texto}>
@@ -47,7 +49,7 @@ function Contatos() {
                         </div>
                     </div>
 
-                    <ul className={styles.linksContato}>         
+                    <ul data-animate="right" className={styles.linksContato}>         
                         <a href="https://linkedin.com/rlsinspeçoes" target="_blank" rel="noopener noreferrer">
                             <li>LINKEDIN</li> 
                         </a>
@@ -62,9 +64,9 @@ function Contatos() {
                         </a>
                     </ul>
                 </div>
-                <div className={styles.trabalheConosco}>
-                    <h1 className={styles.titulo}>TRABALHE CONOSCO</h1>
-                    <h2>ENVIE SEU CURRÍCULO:</h2>
+                <div data-animate="top" className={styles.trabalheConosco}>
+                    <h1  className={styles.titulo}>TRABALHE CONOSCO</h1>
+                    <h2 >ENVIE SEU CURRÍCULO:</h2>
                     <div className={styles.bloco}>
                         <span className={styles.assunto}>ASSUNTO: CV+NOME+PROFISSÃO</span>
                         <span className={styles.mensagem}>TEXTO: *BREVE APRESENTAÇÃO PROFISSIONAL ATUAL*</span>

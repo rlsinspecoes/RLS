@@ -16,7 +16,7 @@
     padding-bottom: 10px;
     font-weight: 700;
     text-align: center;
-    color: #0c3944;
+    color: #224a79;
     font-size: 40px;
 }
 
@@ -51,7 +51,7 @@
 .serviços li:hover{
     transform: scale(1.1);
     transition: 0.9s;
-    color: #003642;
+    color: #224a79;
     
 }
 
@@ -70,8 +70,8 @@
 }
 .home2 .title2 a:hover{
     color: #ffffff;
-    background-color: #00232c;
-    border: 3px solid #00232c; 
+    background-color: #122a45;
+    border: 3px solid #142f4e;
     transition: 0.7s;
 }
 @media screen and (max-width: 1400px){

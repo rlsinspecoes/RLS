@@ -1,17 +1,19 @@
 import React from 'react';
 import styles from '../css/Home.module.css';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 import homeImage from '../images/home.jpg';
 
 function Home() {
+    useScrollAnimation();
     return (
         
         <div className={styles.home}>
             <section className={styles.home} id="home">
                 <div className={styles.blocoHome}>
-                    <div className={styles.image}>
+                    <div data-animate="top"className={styles.image}>
                         <img src={homeImage} alt="" />
                     </div>
-                    <div className={styles.content}>
+                    <div data-animate="top" className={styles.content}>
                         <h3>Seja Bem-Vindo(a)</h3>
                         <h2>RLS INSPEÇÕES</h2>
                         <p>

@@ -1,14 +1,16 @@
 import React from 'react';
-import styles from '../css/Servicos.module.css'; // Importa o módulo CSS
+import useScrollAnimation from '../hooks/useScrollAnimation';
+import styles from '../css/Servicos.module.css';
 
 function Servicos() {
+    useScrollAnimation();
     return (
         <div className={styles.servicos}>
             <section className={styles.home2} id="home2">
                 <div className={styles.title2}>
-                    <h2>NOSSOS SERVIÇOS</h2>
-                    <p>A <span>RLS INSPEÇÕES LTDA</span> é composta por uma equipe técnica experiente e capacitada, dedicada a superar as expectativas dos clientes. Oferecemos soluções eficazes para melhorar processos produtivos e infraestrutura, com agilidade, qualidade, seriedade, ética e transparência em diversas áreas, tais como:</p>
-                    <ul className={styles.serviços}>
+                    <h2 data-animate="top">NOSSOS SERVIÇOS</h2>
+                    <p data-animate="top">A <span>RLS INSPEÇÕES LTDA</span> é composta por uma equipe técnica experiente e capacitada, dedicada a superar as expectativas dos clientes. Oferecemos soluções eficazes para melhorar processos produtivos e infraestrutura, qualidade, seriedade, ética e transparência em diversas áreas, <br />tais como:</p>
+                    <ul data-animate="right" className={styles.serviços}>
                         <li>Instalações de Caldeiras</li>
                         <li>Inspeções de Fabricação</li>
                         <li>Inspeções Dimensionais</li>

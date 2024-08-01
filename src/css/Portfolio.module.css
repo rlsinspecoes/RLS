@@ -12,11 +12,11 @@
 }
 
 .portContent h2 {
-    text-shadow: -2.5px 3px 3px #000000d3;
+    text-shadow: -1px 3px 3px #000000d3;
     margin-top: 30px;
     padding-bottom: 10px;
     font-weight: 700;
-    color: #0c3944;
+    color: #224a79;
     font-size: 40px;
 }
 
@@ -65,7 +65,7 @@
 .portfolio li:hover {
     transform: scale(1.03);
     transition: 0.9s;
-    color: #003642;
+    color: #224a79;
 }
 
 @media screen and (max-width: 1400px){
